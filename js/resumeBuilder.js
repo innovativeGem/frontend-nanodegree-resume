@@ -12,6 +12,7 @@ var bio = {
         "email": "naman.nanavati@gmail.com",
         "mobile": "+61 433 433 173",
         "github": "innovativeGem",
+        "location": "Melbourne, Australia"
     },
     "skills": ["can do attitude", "programming", "HTML", "CSS", "JS"]
 };
@@ -37,12 +38,12 @@ var projects = {
         "title": "BMW Motorrad - All models pricing tool.",
         "dates": "July 2015",
         "description": "I developed this page from stratch to display all BMW Motorrad models and display their prices based on the selected state. When user clicks on any bike, it goes to the details page. It is a single page application using Angular JS template and routing.",
-        "images": ["http://placehold.it/360x220/f5ae23", "http://placehold.it/360x220/f5ae23"]
+        "images": ["images/motorrad-1.jpg", "images/motorrad-2.jpg"]
     }, {
         "title": "BMW Cars - Model comparison tool.",
         "dates": "November 2015 - March 2016",
         "description": "BMW Cars national website required a model comparison tool for which I developed the front end design, DOM and style. I also used Angular Material for added functionality.",
-        "images": ["http://placehold.it/360x220/f5ae23", "http://placehold.it/360x220/f5ae23"]
+        "images": ["images/bmw-1.jpg", "images/bmw-2.jpg"]
     }]
 };
 
@@ -86,6 +87,7 @@ $("#mapDiv").append(googleMap);
 $("#footerContacts").append(HTMLmobile.replace("%data%", bio.contacts.mobile));
 $("#footerContacts").append(HTMLemail.replace("%data%", bio.contacts.email));
 $("#footerContacts").append(HTMLgithub.replace("%data%", bio.contacts.github));
+$("#footerContacts").append(HTMLlocation.replace("%data%", bio.contacts.location));
 
 bio.display = function() {
     if (bio.skills !== null) {
